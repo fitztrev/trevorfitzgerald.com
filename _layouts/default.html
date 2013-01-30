@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		{% if page.title %}
+			{{ page.title }} | {{ site.name }}
+		{% else %}
+			{{ site.name }}
+		{% endif %}
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+
+	{% if page.description %}
+	<meta property="og:description" content="{{ page.description }}" />
+	<meta name="description" content="{{ page.description }}" />
+	{% endif %}
+
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,900' rel='stylesheet' type='text/css'>
+	<link href="/css/blog.css?{{ 'now' | date:'%Y%m%d%H%M%S' }}" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/favicon.ico?{{ 'now' | date:'%Y%m%d%H%M%S' }}">
+	<link rel="alternate" type="application/rss+xml" title="Tallied RSS Feed" href="/rss.xml" />
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-438417-4']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
+</head>
+<body id="{% if page.page == 'resume' %}resume{% else %}body{% endif %}">
+
+<div id="header">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				{% if page.url != '/index.html' %}
+					<h2><a href="{{ site.url }}">Trevor Fitzgerald</a></h2>
+				{% else %}
+					<h2>Trevor Fitzgerald</h2>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="content" class="container">
+	{{ content }}
+</div>
+</body>
+</html>

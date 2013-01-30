@@ -1,0 +1,9 @@
+permalink: /:title/
+
+name: "Trevor Fitzgerald"
+url: "http://trevorfitzgerald.com"
+
+authors:
+  trevor:
+    display_name: Trevor Fitzgerald
+    twitter: fitztrev

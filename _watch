@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Bash script to monitor changes to any of the LESS files and automatically compile them
+# This is used during development (along with `jekyll --server --auto` to automatically update changes)
+
+echo "Watching folder `pwd`"
+
+watchmedo \
+	shell-command \
+	--patterns="*.less" \
+	--recursive \
+	--command='lessc css/blog.less > css/blog.css -x' \
+	.
