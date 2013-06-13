@@ -1,3 +1,4 @@
-_site/
-css/blog.css
-resume.html
+_jekyll_s3.yml
+_site
+_assets/stylesheets/style.css
+Gemfile.lock

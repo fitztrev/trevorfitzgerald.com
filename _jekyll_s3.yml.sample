@@ -1,0 +1,8 @@
+s3_id: KEY
+s3_secret: SECRET
+s3_bucket: BUCKET
+cloudfront_distribution_id: DISTRIBUTION
+max_age:
+  "assets/*": 31536000
+  "*": 300
+gzip: true

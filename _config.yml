@@ -1,9 +1,8 @@
+name: Trevor Fitzgerald
+url: http://trevorfitzgerald.com
+
 permalink: /:title/
+exclude: ['*.less', 'Gemfile*']
 
-name: "Trevor Fitzgerald"
-url: "http://trevorfitzgerald.com"
-
-authors:
-  trevor:
-    display_name: Trevor Fitzgerald
-    twitter: fitztrev
+jekyll-press:
+  exclude: ['robots.txt', 'rss.xml', 'sitemap.xml']

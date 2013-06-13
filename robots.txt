@@ -2,5 +2,5 @@
 layout: none
 ---
 User-agent: *
-Disallow: /resume/
+Disallow:
 Sitemap: {{ site.url }}/sitemap.xml

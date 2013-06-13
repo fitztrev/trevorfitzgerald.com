@@ -2,17 +2,7 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="span8">
-		<h1>{{ page.title }}</h1>
-		<p><em class="muted">{{ page.date | date: "%B %d, %Y" }}</em></p>
-		{{ content }}
-		<div class="clearfix"></div>
-		<hr />
-	</div>
-	<div class="span4 pagination-right">
-		<a href="https://twitter.com/fitztrev" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @fitztrev</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<h2>{{ page.title }}</h2>
+<p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
 
-	</div>
-</div>
+{{ content }}
