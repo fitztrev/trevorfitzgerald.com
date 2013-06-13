@@ -1,7 +1,7 @@
 name: Trevor Fitzgerald
 url: http://trevorfitzgerald.com
 
-permalink: /:year/:month/:title.html
+permalink: /:title/
 exclude: ['*.less', 'Gemfile*']
 
 jekyll-press:
