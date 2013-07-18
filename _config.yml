@@ -2,7 +2,13 @@ name: Trevor Fitzgerald
 url: http://trevorfitzgerald.com
 
 permalink: /:year/:month/:title.html
-exclude: ['*.less', 'Gemfile*']
+exclude:
+  - '*.less'
+  - 'Gemfile*'
+  - 's3_website.yml'
 
 jekyll-press:
-  exclude: ['robots.txt', 'rss.xml', 'sitemap.xml']
+  exclude:
+    - 'robots.txt'
+    - 'rss.xml'
+    - 'sitemap.xml'
