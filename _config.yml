@@ -5,7 +5,7 @@ permalink: /:year/:month/:title.html
 exclude:
   - '*.less'
   - 'Gemfile*'
-  - 's3_website.yml'
+  - 's3_website.yml*'
 
 jekyll-press:
   exclude:
