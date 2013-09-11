@@ -3,6 +3,14 @@ language: ruby
 rvm:
   - 1.9.3
 
-install: bundle install
-script: bundle exec jekyll build
-#after_success: bundle exec s3_website push --headless
+before_install:
+  - git submodule update --init --recursive
+
+install:
+  - bundle install
+
+script:
+  - bundle exec jekyll build
+
+#after_success:
+#  - bundle exec s3_website push --headless
