@@ -7,6 +7,9 @@ exclude:
   - 'Gemfile*'
   - 's3_website.yml*'
 
+assets:
+  css_compressor: yui
+
 jekyll-press:
   exclude:
     - 'robots.txt'
