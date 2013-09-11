@@ -10,4 +10,11 @@ script:
   - bundle exec jekyll build
 
 after_success:
- - bundle exec s3_website push --headless
+  - bundle exec s3_website push --headless
+
+env:
+  global:
+    - secure: KOwGGbpeddbaeKetM5SF2VlKpRrAEsrdsrjBpIMBhnPE+vqNCAhh2t1u0t46esNbseVWrB5KImumem7SlplbqxzkPufXMJvpi/i4SBPMGN22cCZj0FX83dBM/Vv59X72qdgz22/NKQnZi8E8xQ+DUWt495pjvbBWPBtrThCpIpA=
+    - secure: Y7+6wO8AXza1fpgU4n/AUa7fMj0Fr9KjvarY2vaiNf1rMdspQ64K0TyP9exuM8JXDXNgNrzfXZ8uKdwbYPPnvLelYxdKmN1Rwmw40aInOmxqTOVIH/wJ58S/vw6x0s6mzdPJm9JmmcUKjw2NZPx3IVikpabfMWSWmfphSKDb3VY=
+    - secure: fbJrOvhYrMXaZggmWvMzAWerzdZ65qhkKRLHnRTd1xlkghB1imhZEzHtsrszIunbL7I9W5tqTlmOwyUiZIi9BMr+C9pY6bOVzx7sFuXF+PxDOG61rJsQYYTtqllJp31WNxuhr+kiYyQFHV1k83nR6WuM8OskijJqHHDPMzI56J8=
+    - secure: Nj0kVJNOsLdXja1Ong7RfRndkL1IsfSQJXKGgjKecOQsyFjqup15LwIa9sA9AquOSLZ+zaWeWSPm0zbjKaX1qzktO5toMwDypnjMBwUFCnwZP+an2Y/4pwebfx0blIcK2Ew7rn5by+P2imMe1i86fXh1wtE0nOYcCX0/7kXPQiM=
