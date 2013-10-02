@@ -130,7 +130,7 @@ GEM
       ref
     thor (0.18.1)
     tilt (1.4.1)
-    travis (1.5.4)
+    travis (1.5.5)
       backports
       faraday (~> 0.8.7)
       faraday_middleware (~> 0.9)
