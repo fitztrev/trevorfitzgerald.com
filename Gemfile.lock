@@ -70,6 +70,7 @@ GEM
       jekyll
       multi_css (>= 0.1.0)
       multi_js (>= 0.1.0)
+    jekyll-utf8 (0.0.1)
     json (1.8.0)
     launchy (2.3.0)
       addressable (~> 2.3)
@@ -85,7 +86,7 @@ GEM
       css_press
     multi_js (0.1.0)
       uglifier (~> 2)
-    multi_json (1.8.0)
+    multi_json (1.8.1)
     multipart-post (1.2.0)
     net-http-persistent (2.9)
     net-http-pipeline (1.0.1)
@@ -107,7 +108,7 @@ GEM
     redcarpet (2.3.0)
     ref (1.0.5)
     ruby-hmac (0.4.0)
-    s3_website (1.4.3)
+    s3_website (1.4.4)
       aws-sdk (~> 1.8.5)
       configure-s3-website (~> 1)
       erubis (~> 2.7.0)
@@ -160,6 +161,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-less
   jekyll-press
+  jekyll-utf8
   s3_website
   therubyracer
   travis
