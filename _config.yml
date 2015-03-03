@@ -2,16 +2,3 @@ name: Trevor Fitzgerald
 url: http://trevorfitzgerald.com
 
 permalink: /:year/:month/:title.html
-exclude:
-  - '*.less'
-  - 'Gemfile*'
-  - 's3_website.yml*'
-
-assets:
-  css_compressor: yui
-
-jekyll-press:
-  exclude:
-    - 'robots.txt'
-    - 'rss.xml'
-    - 'sitemap.xml'
